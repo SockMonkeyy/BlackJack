@@ -133,10 +133,12 @@ button {
 }
 
 
-.new-game-button {
+.newGame {
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: .6rem;
   color: #fff;
-  width: 130px;
-  height: 40px;
+  width: auto;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
@@ -147,4 +149,9 @@ button {
   background-color: lime;
   box-shadow: 0 0 5px lime;
   border-radius: 5px;
+}
+
+
+.newGame:hover {
+  box-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 20px #fff inset;
 }

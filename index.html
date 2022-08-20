@@ -20,6 +20,10 @@
         <h1 class="neonText col-sm-4">
             Black Jack
            </h1>
+            <div class="row mt-5 mb-3 container score justify-content-center d-flex text-center">
+         <p> Score: </p>
+         <div class="col-4" id="player-score"></div>
+         <div class="col-4" id="dealer-score"></div> 
         </div>
         <div style="display: none;" class="container" id="cards">
        
@@ -36,19 +40,15 @@
          <input type='button' class="custom-btn2 btn-2" id='stand-button' value='Stand' onclick='stand();' disabled/>
        
          <div style="font-size: 2rem;" class="d-flex mb-3 justify-content-center" id=player-money></div>
-        <div style="font-size: 1.5rem;"> Bet: </div>
-         <input type='number' class="rounded" id='bet' value='10' min='1' max=""/>
+        <div style="font-size: 2rem;"> Bet: </div>
+         <input type='number' style="font-size: 1.5rem;" class="rounded" id='bet' value='10' min='1' max=""/>
         </form>
     </div>
 
-    <div class="container mt-5">
-            <div class="row container score justify-content-center d-flex text-center">
-         <p> Score: </p>
-         <div class="col-4" id="player-score"></div>
-         <div class="col-4" id="dealer-score"></div> 
+    <div class="row mt-5 mb-3 container score justify-content-center d-flex text-center">
          <h2 id="message-board"></h2>
         </div>
-    </div>
+    
 
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
