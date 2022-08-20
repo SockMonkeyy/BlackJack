@@ -40,7 +40,7 @@ var deck = {
     }
 };
 
-document.getElementById("player-money").innerHTML = "Your money: $" + player.money;
+document.getElementById("player-money").innerHTML = "Bank: $" + player.money;
 deck.initialize();
 deck.shuffle();
 
