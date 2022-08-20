@@ -146,7 +146,7 @@ function dealerDraw() {
     dealer.cards.push(deck.deckArray[numCardsPulled]);
     dealer.score = getCardsValue(dealer.cards);
     document.getElementById("dealer-cards").innerHTML = "Dealer Cards: " + JSON.stringify(dealer.cards);
-    document.getElementById("dealer-score").innerHTML = "Dealer Score: " + dealer.score;
+    document.getElementById("dealer-score").innerHTML = "Dealer Total: " + dealer.score;
     numCardsPulled += 1;
 }
 
@@ -164,8 +164,8 @@ function newGame() {
 function hit() {
     player.cards.push(deck.deckArray[numCardsPulled]);
     player.score = getCardsValue(player.cards);
-    document.getElementById("player-cards").innerHTML = "Player Cards: " + JSON.stringify(player.cards);
-    document.getElementById("player-score").innerHTML = "Player Score: " + player.score;
+    document.getElementById("player-cards").innerHTML = "Dealer Total: " + JSON.stringify(player.cards);
+    document.getElementById("player-score").innerHTML = "Your Total: " + player.score;
     numCardsPulled += 1;
     if (numCardsPulled >= 2) {
         endGame();
